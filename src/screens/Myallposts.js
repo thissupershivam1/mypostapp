@@ -93,7 +93,7 @@ function MyAllPosts() {
       <h5 className="card-title">{post.title}</h5>
       <p className="card-text">{post.body}</p>
       <div className="d-flex justify-content-between">
-        <Link to={`/posts/${post.id}/${post.userId}`} className="btn btn-primary text-uppercase "><i className="fa-sharp fa-solid fa-mountain-sun me-1"></i> Details</Link>
+        <Link to={`/post/${post.id}/${post.userId}`} className="btn btn-primary text-uppercase "><i className="fa-sharp fa-solid fa-mountain-sun me-1"></i> Details</Link>
         <Link to={`/create/${post.id}/${post.userId}`} className="btn btn-warning text-uppercase  "><i className="fa-solid fa-pen-to-square me-1"></i> Edit</Link>
         <button onClick={()=>{deletePost(post.id)}} className="btn btn-danger text-uppercase "> <i className="fa-solid fa-trash me-1"></i> Delete</button>
       </div>
